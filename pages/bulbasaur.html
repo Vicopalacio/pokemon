@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="author"
+      content="Josefina, Tomas, Ramiro, Victoria, Tomas, Marcos"
+    />
+    <meta name="description" content="pagina de pokemon" />
+    <meta name="keywords" content="pokemon, animacion, practica de git" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-danger">
+        <div class="container">
+          <a class="navbar-brand text-light" href="#">Pokedex</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active text-light"
+                  aria-current="page"
+                  href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-light"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorías
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Busca tu pokemon"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container my-4">
+        <div id="carouselpokemon" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselpokemon"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselpokemon"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselpokemon"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="https://images.pexels.com/photos/1310847/pexels-photo-1310847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="d-block w-100 carousel"
+                alt="mano con pokebola"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/1716861/pexels-photo-1716861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="d-block w-100 carousel"
+                alt="pikachu con mano stop"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="https://images.pexels.com/photos/243698/pexels-photo-243698.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                class="d-block w-100 carousel"
+                alt="celular con app de pokemon"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselpokemon"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselpokemon"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <p>
+          Los datos fueron tomados de la siguiente web
+          <a href="https://www.pokemon.com/el/pokedex/"
+            >https://www.pokemon.com/el/pokedex/</a
+          >
+        </p>
+      </section>
+      <div class="container border rounded-3 mb-5">
+        <section>
+          <article class="text-center">
+            <h2>Bulbasaur <span class="text-muted">N.°001</span></h2>
+          </article>
+          <article class="row mt-5">
+            <aside class="col sm-12 md-4 lg-4">
+              <img
+                src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+                alt="bulbasaur"
+                class="w-80"
+              />
+            </aside>
+            <aside class="col sm-12 md-6 lg-6">
+              <p>
+                Este pokemón nace con una semilla en el lomo, que brota con el
+                paso del tiempo
+              </p>
+              <div class="card bg-primary">
+                <div class="card-body text-white">
+                  <h5 class="card-title">Versión</h5>
+                  <div class="row">
+                    <p class="col-6">Altura<br />0.7 m</p>
+                    <p class="col-6">Categoría<br />Semilla</p>
+                    <p class="col-6">Peso<br />6.9 kg</p>
+                    <p class="col-6">Habilidad<br />espesura</p>
+                    <p class="col-6">&male; &female;</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h6>
+                  Tipo<br /><span class="badge bg-success">Planta</span
+                  ><span class="badge bg-danger">Veneno</span>
+                </h6>
+              </div>
+              <div></div>
+              <div>
+                <h6>
+                  Debilidad<br /><span class="badge bg-danger">Fuego</span
+                  ><span class="badge bg-warning">Psiquico</span>
+                  <span class="badge bg-secondary">Volador</span
+                  ><span class="badge bg-primary">Hielo</span>
+                </h6>
+              </div>
+              <div></div>
+            </aside>
+          </article>
+        </section>
+        <section class="color mb-3">
+          <div>
+            <h3 class="ms-3">Evoluciones</h3>
+          </div>
+          <article class="row">
+            <aside class="col-12 col-md-4 col-lg-4">
+              <div class="color">
+                <img
+                  src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+                  class="card-img-top w-100"
+                  alt="Bulbasaur"
+                />
+                <div class="card-body ms-3">
+                  <h5 class="card-title">
+                    Bulbasaur <span class="text-muted">N.001</span>
+                  </h5>
+                  <span class="badge text-bg-success">planta</span
+                  ><span class="badge text-bg-danger">Veneno</span>
+                </div>
+              </div>
+            </aside>
+            <aside class="col-12 col-md-4 col-lg-4">
+              <div class="color">
+                <img
+                  src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"
+                  class="card-img-top w-100"
+                  alt="Ivysaur"
+                />
+                <div class="card-body ms-3">
+                  <h5 class="card-title">
+                    Yvisaur <span class="text-muted">N.002</span>
+                  </h5>
+                  <span class="badge text-bg-success">planta</span
+                  ><span class="badge text-bg-danger">Veneno</span>
+                </div>
+              </div>
+            </aside>
+            <aside class="col-12 col-md-4 col-lg-4">
+              <div class="color">
+                <img
+                  src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"
+                  class="card-img-top w-100"
+                  alt="Venusaur"
+                />
+                <div class="card-body ms-3">
+                  <h5 class="card-title">
+                    Venusaur <span class="text-muted">N.003</span>
+                  </h5>
+                  <span class="badge text-bg-success">planta</span
+                  ><span class="badge text-bg-danger">Veneno</span>
+                </div>
+              </div>
+            </aside>
+          </article>
+        </section>
+      </div>
+    </main>
+    <footer class="bg-dark py-4 text-center text-light">
+      <p>&copy Todos los derechos reservados</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
